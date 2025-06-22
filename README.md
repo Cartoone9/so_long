@@ -6,38 +6,42 @@
   
 This is my so_long project, an implementation of a basic 2D game as part of my 42 School coursework. The core of this project revolved around parsing game environments, implementing player interaction, and displaying visuals using MiniLibX. It provided valuable insights into game logic design, collision detection, and the fundamentals of graphical programming with C libraries.
 
+---
+
 ## Usage
 
-First, add the minilibX to the project root and compile it. For linux users: 
+First, add the minilibX to the project root and compile it. For Linux users: 
 ```bash
 git clone https://github.com/42Paris/minilibx-linux.git
 cd minilibx-linux && make
 ```
 
 After that, to compile the game go to the project root and run:
-```Bash
+```bash
 make
 # or
 make bonus
 ```
 
 Once that's done you can use the program like this:
-```Bash
-./so_long map_file
+```bash
+./so_long map_file.ber
 ```
 
 ## Controls
 
 Move the player:  
 - `W`, `A`, `S`, `D`  
-- `up`, `left`, `down`, `right`  
+- `↑`, `←`, `↓`, `→`  
 
 Quit the game:  
 - `ESC`
 
 ## Examples
 
-The following examples were recorded using the file maps/map_3.ber:  
+The following examples were recorded using the file maps/map_3.ber.  
+You can find other maps available in the `maps/` directory, or add your own.  
+  
 - Idle:  
 ![Example idle](https://i.ibb.co/gMyD65Hn/idle-so-long.gif)  
 - Losing:  
@@ -47,18 +51,17 @@ The following examples were recorded using the file maps/map_3.ber:
 
 ### Easter Egg
 
-Pressing `E` in-game triggers a small hidden animation:
+Pressing `E` in-game triggers a small hidden animation after winning:
 ![Example easter](https://i.ibb.co/N2sCpDt3/easter-so-long.gif)  
 
 ## Note on Project State
 
 All projects from my 42 cursus are preserved in their state immediately following their final evaluation. While they may contain mistakes or stylistic errors, I've chosen not to alter them. This approach provides a clear and authentic timeline of my progress and learning journey as a programmer.
 
-## Notable errors
+## Known Issues & Fix Suggestions
 
-The last step before winning or losing isn't updating the step counter. You can see that behavior in the examples above.
-
-One easy way to fix this is to alter the function ft_end_game like this:
+The step counter doesn't update for the final move before winning or losing.  
+This can be fixed by updating the ft_end_game function like so:  
 
 ```C
 int	ft_end_game(void *vdata)
@@ -92,11 +95,11 @@ int	ft_end_game(void *vdata)
 
 This way the game will update the hud one last time before it ends.
 
-There's also an unprotected malloc in my get_next_line function ft_fill_stash.
+`ft_fill_stash()` in my `get_next_line` implementation contains an unprotected `malloc()` that could cause issues in edge cases.## Special Thanks
 
-## Special thanks
+## Special Thanks
 
-Big thanks to [BUTTERHANDS](https://butterhands.itch.io/) who made almost all the sprites I used for this project, and distributed them freely.
+Big thanks to [BUTTERHANDS](https://butterhands.itch.io/) who made nearly all the sprites used in this project and released them for free.
 
 ## License
 
