@@ -45,6 +45,10 @@ All projects from my 42 cursus are preserved in their state immediately followin
 
 There's one unprotected malloc in my get_next_line function ft_fill_stash.
 
+## Special thanks
+
+Big thanks to [BUTTERHANDS](https://butterhands.itch.io/) who made almost all the sprites I used for this project, and distributed them freely.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)  
