@@ -31,7 +31,8 @@ The following examples were recorded using the file maps/map_3.ber:
 ![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)  
 - Winning:  
 ![Example winning](https://i.ibb.co/tM8S41bX/win-so-long.gif)  
-
+- Small easter egg when 'E' is pressed ingame:  
+![Example easter](https://i.ibb.co/N2sCpDt3/easter-so-long.gif)  
 ## Note on Project State
 
 All projects from my 42 cursus are preserved in their state immediately following their final evaluation. While they may contain mistakes or stylistic errors, I've chosen not to alter them. This approach provides a clear and authentic timeline of my progress and learning journey as a programmer.
