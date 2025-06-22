@@ -8,9 +8,13 @@ This is my so_long project, an implementation of a basic 2D game as part of my 4
 
 ## Usage
 
-To compile the program you will need to add the minilibX to the project root and compile the minilibX.  
-  
-After that, if you're not there navigate to the project root and run:
+First, add the minilibX to the project root and compile it. For linux users: 
+```bash
+git clone https://github.com/42Paris/minilibx-linux.git
+cd minilibx-linux && make
+```
+
+After that, to compile the game go to the project root and run:
 ```Bash
 make
 # or
@@ -22,6 +26,15 @@ Once that's done you can use the program like this:
 ./so_long map_file
 ```
 
+## Controls
+
+Move the player:  
+- `W`, `A`, `S`, `D`  
+- `up`, `left`, `down`, `right`  
+
+Quit the game:  
+- `ESC`
+
 ## Examples
 
 The following examples were recorded using the file maps/map_3.ber:  
@@ -31,8 +44,12 @@ The following examples were recorded using the file maps/map_3.ber:
 ![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)  
 - Winning:  
 ![Example winning](https://i.ibb.co/tM8S41bX/win-so-long.gif)  
-- Small easter egg when 'E' is pressed ingame:  
+
+### Easter Egg
+
+Pressing `E` in-game triggers a small hidden animation:
 ![Example easter](https://i.ibb.co/N2sCpDt3/easter-so-long.gif)  
+
 ## Note on Project State
 
 All projects from my 42 cursus are preserved in their state immediately following their final evaluation. While they may contain mistakes or stylistic errors, I've chosen not to alter them. This approach provides a clear and authentic timeline of my progress and learning journey as a programmer.
@@ -46,7 +63,7 @@ One easy way to fix this is to alter the function ft_end_game like this:
 ```C
 int	ft_end_game(void *vdata)
 {
-	t_data			*data;
+	t_data  *data;
 
 	data = (t_data *)vdata;
 	if (data->end == 0)
