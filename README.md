@@ -93,7 +93,7 @@ int	ft_end_game(void *vdata)
 
 This way the game will update the hud one last time before it ends.
 
-`ft_fill_stash()` in my `get_next_line` implementation contains an unprotected `malloc()` that could cause issues in edge cases.## Special Thanks
+`ft_fill_stash()` in my `get_next_line` implementation contains an unprotected `malloc()` that could cause issues in edge cases.
 
 ## Special Thanks
 
