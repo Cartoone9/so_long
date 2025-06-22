@@ -29,13 +29,13 @@ Once that's done you can use the program like this:
 
 The following examples were recorded using the file maps/map_3.ber:  
 - Idle:  
-![Example idle](https://i.ibb.co/gMyD65Hn/idle-so-long.gif)
+![Example idle](https://i.ibb.co/gMyD65Hn/idle-so-long.gif)  
 - Losing:  
-![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)
+![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)  
 - Winning:  
-![Example winning]()
+![Example winning]()  
 - Small easter egg:  
-![Example easter]()
+![Example easter]()  
 
 ## Note on Project State
 
