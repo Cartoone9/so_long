@@ -33,7 +33,7 @@ The following examples were recorded using the file maps/map_3.ber:
 - Losing:  
 ![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)  
 - Winning:  
-![Example winning]()  
+![Example winning](https://i.ibb.co/tM8S41bX/win-so-long.gif)  
 - Small easter egg:  
 ![Example easter]()  
 
