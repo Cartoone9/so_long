@@ -6,9 +6,6 @@
   
 This is my so_long project, an implementation of a basic 2D game as part of my 42 School coursework. The core of this project revolved around parsing game environments, implementing player interaction, and displaying visuals using MiniLibX. It provided valuable insights into game logic design, collision detection, and the fundamentals of graphical programming with C libraries.
 
-## Important functions
-
-
 ## Usage
 
 To compile the program you will need to add the minilibX to the project root and compile the minilibX.  
@@ -43,9 +40,43 @@ All projects from my 42 cursus are preserved in their state immediately followin
 
 ## Notable errors
 
-The last step before winning or losing isn't updating the step counter. You can see that behavior in the examples above. 
-  
-There's one unprotected malloc in my get_next_line function ft_fill_stash.
+The last step before winning or losing isn't updating the step counter. You can see that behavior in the examples above.
+
+One easy way to fix this behavior is to alter the function ft_end_game like this:
+
+```C
+int	ft_end_game(void *vdata)
+{
+	t_data			*data;
+
+	data = (t_data *)vdata;
+	if (data->end == 0)
+		return (ft_game_latency(data));
+	if (data->end == 1)
+	{
+        // EDIT BEGIN
+		if (data->winner + data->loser == 1)
+			ft_render_elements(data);
+        //EDIT END
+
+		if (data->loser > 0 && data->loser < 6)
+			ft_end_game_loser(data);
+		else if (data->winner > 0 && data->winner < 6)
+			ft_end_game_winner(data);
+		else if (ft_black_fade(data) == 1)
+			data->end++;
+	}
+	if (data->end > 1 && data->end < 30)
+		ft_end_game_img(data);
+	if (data->end == 30)
+		ft_close_window(data);
+	return (0);
+}
+```
+
+This way the game will update the hud one last time before it ends.
+
+There's also an unprotected malloc in my get_next_line function ft_fill_stash.
 
 ## Special thanks
 
