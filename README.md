@@ -27,7 +27,8 @@ Once that's done you can use the program like this:
 
 ## Examples
 
-![Example idle](https://i.ibb.co/LDpYVwG8/output-higher-res.gif)
+The following examples were recorded using the file maps/map_3.ber:
+![Example idle](https://i.ibb.co/gMyD65Hn/idle-so-long.gif)
 
 ## Note on Project State
 
