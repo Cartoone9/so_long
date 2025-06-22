@@ -4,21 +4,30 @@
 
 # so_long
   
+This is my so_long project, an implementation of a basic 2D game as part of my 42 School coursework. The core of this project revolved around parsing game environments, implementing player interaction, and displaying visuals using MiniLibX. It provided valuable insights into game logic design, collision detection, and the fundamentals of graphical programming with C libraries.
 
 ## Important functions
 
 
 ## Usage
 
-To compile the program, navigate to the project root and run:
+To compile the program you will need to add the minilibX to the project root and compile the minilibX.  
+  
+After that, if you're not there navigate to the project root and run:
 ```Bash
 make
 # or
 make bonus
 ```
 
+Once that's done you can use the program like this:
+```Bash
+./so_long map_file
+```
+
 ## Examples
 
+![Example idle](https://i.ibb.co/LDpYVwG8/output-higher-res.gif)
 
 ## Note on Project State
 
@@ -26,6 +35,7 @@ All projects from my 42 cursus are preserved in their state immediately followin
 
 ## Notable errors
 
+There's one unprotected malloc in my get_next_line function ft_fill_stash.
 
 ## License
 
