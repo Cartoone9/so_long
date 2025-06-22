@@ -31,8 +31,6 @@ The following examples were recorded using the file maps/map_3.ber:
 ![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)  
 - Winning:  
 ![Example winning](https://i.ibb.co/tM8S41bX/win-so-long.gif)  
-- Small easter egg:  
-![Example easter](https://i.ibb.co/N2sCpDt3/easter-so-long.gif)  
 
 ## Note on Project State
 
