@@ -43,6 +43,8 @@ All projects from my 42 cursus are preserved in their state immediately followin
 
 ## Notable errors
 
+The last step before winning or losing isn't updating the step counter. You can see that behavior in the examples above. 
+  
 There's one unprotected malloc in my get_next_line function ft_fill_stash.
 
 ## Special thanks
