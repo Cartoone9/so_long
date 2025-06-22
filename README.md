@@ -32,7 +32,7 @@ The following examples were recorded using the file maps/map_3.ber:
 - Winning:  
 ![Example winning](https://i.ibb.co/tM8S41bX/win-so-long.gif)  
 - Small easter egg:  
-![Example easter](https://i.ibb.co/DHxm5ymy/easter-so-long.gif)  
+![Example easter](https://i.ibb.co/N2sCpDt3/easter-so-long.gif)  
 
 ## Note on Project State
 
@@ -42,7 +42,7 @@ All projects from my 42 cursus are preserved in their state immediately followin
 
 The last step before winning or losing isn't updating the step counter. You can see that behavior in the examples above.
 
-One easy way to fix this behavior is to alter the function ft_end_game like this:
+One easy way to fix this is to alter the function ft_end_game like this:
 
 ```C
 int	ft_end_game(void *vdata)
