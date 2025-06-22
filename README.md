@@ -37,7 +37,7 @@ Quit the game:
 
 ## Examples
 
-The following examples were recorded using the file maps/map_3.ber.  
+The following examples were recorded using the file `maps/map_3.ber`.  
 You can find other maps available in the `maps/` directory, or add your own.  
   
 - Idle:  
@@ -59,7 +59,7 @@ All projects from my 42 cursus are preserved in their state immediately followin
 ## Known Issues & Fix Suggestions
 
 The step counter doesn't update for the final move before winning or losing.  
-This can be fixed by updating the ft_end_game function like so:  
+This can be fixed by updating the `ft_end_game()` function like so:  
 
 ```C
 int	ft_end_game(void *vdata)
