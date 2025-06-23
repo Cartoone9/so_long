@@ -49,7 +49,7 @@ You can find other maps available in the `maps/` directory, or add your own.
 
 ### Easter Egg
 
-Pressing `E` in-game triggers a small hidden animation after winning:
+Pressing `E` in-game triggers a small hidden animation after winning:  
 ![Example easter](https://i.ibb.co/N2sCpDt3/easter-so-long.gif)  
 
 ## Note on Project State
