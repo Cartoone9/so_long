@@ -71,10 +71,10 @@ int	ft_end_game(void *vdata)
 		return (ft_game_latency(data));
 	if (data->end == 1)
 	{
-        // EDIT BEGIN
+        	// EDIT BEGIN
 		if (data->winner + data->loser == 1)
 			ft_render_elements(data);
-        // EDIT END
+        	// EDIT END
 
 		if (data->loser > 0 && data->loser < 6)
 			ft_end_game_loser(data);
