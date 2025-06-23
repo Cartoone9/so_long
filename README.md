@@ -40,11 +40,11 @@ Quit the game:
 The following examples were recorded using the file `maps/map_3.ber`.  
 You can find other maps available in the `maps/` directory, or add your own.  
   
-- Idle:  
+Idle:  
 ![Example idle](https://i.ibb.co/gMyD65Hn/idle-so-long.gif)  
-- Losing:  
+Losing:  
 ![Example losing](https://i.ibb.co/S4XbbWZf/lose-so-long.gif)  
-- Winning:  
+Winning:  
 ![Example winning](https://i.ibb.co/tM8S41bX/win-so-long.gif)  
 
 ### Easter Egg
