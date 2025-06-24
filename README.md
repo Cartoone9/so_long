@@ -95,7 +95,7 @@ This way the game will update the hud one last time before it ends.
 
 `ft_fill_stash()` in my `get_next_line` implementation contains an unprotected `malloc()` that could cause issues in edge cases.
 
-## Special Thanks
+## Credits
 
 Big thanks to [BUTTERHANDS](https://butterhands.itch.io/) who made nearly all the sprites used in this project and released them for free.
 
