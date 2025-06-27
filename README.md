@@ -6,6 +6,17 @@
   
 This is my so_long project, an implementation of a basic 2D game as part of my 42 School coursework. The core of this project revolved around parsing game environments, implementing player interaction, and displaying visuals using MiniLibX. It provided valuable insights into game logic design, collision detection, and the fundamentals of graphical programming with C libraries.
 
+## Table of Contents
+
+- [About](#so_long)
+- [Usage](#usage)
+- [Controls](#controls)
+- [Examples](#examples)
+- [Note on Project State](#note-on-project-state)
+- [Known Issues & Fix Suggestions](#known-issues--fix-suggestions)
+- [Credits](#credits)
+- [License](#license)
+
 ## Usage
 
 First, add the minilibX to the project root and compile it. For Linux users: 
